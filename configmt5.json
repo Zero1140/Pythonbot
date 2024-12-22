@@ -1,0 +1,46 @@
+{
+    "symbol_config": {
+        "EURUSD": {
+            "strategy": "rsi_bollinger",
+            "slatrcoef": 2.6,
+            "TPSLRatio_coef": 1.7,
+            "risk_perc": 0.0139,
+            "max_spread": 0.00020,
+            "rsi_length": 10,
+            "rsi_overbought": 90,
+            "rsi_oversold": 11
+        },
+        "AUDNZD": {
+            "strategy": "vwap_bollinger",
+            "slatrcoef": 3.7,
+            "TPSLRatio_coef": 1.1,
+            "risk_perc": 0.032,
+            "max_spread": 0.0004,
+            "bb_length": 14,
+            "bb_std": 2.0,
+            "rsi_length": 16,
+            "backcandles": 15,
+            "rsi_overbought": 92,
+            "rsi_oversold": 9
+        },
+        "USDCAD": {
+            "strategy": "rsi_bollinger",
+            "slatrcoef": 3.8,
+            "TPSLRatio_coef": 0.9,
+            "risk_perc": 0.016,
+            "max_spread":  0.00030,
+            "rsi_length": 10,
+            "rsi_overbought": 86,
+            "rsi_oversold": 11
+        }
+    },
+    "timeframe": "mt5.TIMEFRAME_M5",
+    "creds": {
+        "path": "C:/Program Files/MetaTrader 5/terminal64.exe",
+        "server": "Darwinex-Demo",
+        "pass": "%Ob!Vt$zNo9",
+        "login": 3000074068,
+        "timeout": 60000,
+        "portable": false
+    }
+}
