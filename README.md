@@ -72,7 +72,7 @@ Step 1: Clone the Repository
 
 Clone this repository to your local machine:
 
-git clone https://github.com/yourusername/repository-name.git
+git clone [https://github.com/yourusername/repository-name.git](https://github.com/Zero1140/Pythonbot/)
 
 Step 2: Run the Main Script
 
