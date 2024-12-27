@@ -132,3 +132,45 @@ Disclaimers
 
     Use at your own risk: This script is intended for educational purposes only and does not guarantee profitability.
     Test on a demo account: Always test the system on a demo account before using it on a live account.
+
+
+
+
+
+<!-- 
+This "configmt5.json" file is part of a larger trading bot project and contains essential settings. 
+Below is a quick guide to help you adapt it to your own account and setup:
+
+1. **symbol_config**: 
+   - Holds the parameters for each currency pair (e.g., EURUSD, AUDNZD, USDCAD).
+   - Common fields:
+     - **strategy**: the trading strategy (e.g., "rsi_bollinger", "vwap_bollinger").
+     - **slatrcoef**: a factor used to calculate the Stop Loss based on the ATR.
+     - **TPSLRatio_coef**: the ratio between Take Profit and Stop Loss.
+     - **risk_perc**: the percentage of your account balance to risk on each trade.
+     - **max_spread**: the maximum allowed spread before entering a trade.
+     - **rsi_length**, **rsi_overbought**, **rsi_oversold**: RSI-specific parameters.
+     - **bb_length**, **bb_std**: Bollinger Bands parameters.
+     - Other fields may appear depending on the strategy.
+
+2. **timeframe**:
+   - Specifies the chart timeframe to be used (e.g., mt5.TIMEFRAME_M5 for 5-minute candles).
+
+3. **creds**:
+   - Contains your MetaTrader 5 login details. You should replace these with your own:
+     - **path**: path to your local MetaTrader 5 installation 
+       (e.g., "C:/Program Files/MetaTrader 5/terminal64.exe").
+     - **server**: the broker server name (e.g., "Darwinex-Demo").
+     - **pass**: your MetaTrader 5 account password.
+     - **login**: your MetaTrader 5 account login number.
+     - **timeout**: the time (in milliseconds) the script waits for responses.
+     - **portable**: set to `false` if MT5 was installed traditionally, or `true` if running in portable mode.
+
+By editing these sections, you ensure:
+- The bot connects to your correct account using your credentials.
+- Each currency pair uses the right strategy settings.
+- Risk and spread thresholds are enforced as per your preferences.
+
+After customizing your details, save and commit your changes to the repository so the bot can run with your desired configuration!
+-->
+
